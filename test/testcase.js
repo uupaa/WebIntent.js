@@ -62,11 +62,16 @@ function testWebIntent_redirect(test, pass, miss) {
 
         WebIntent.redirect( intentURL );
     }
-    if (1) {
+    if (0) {
         // # Open the page of Caniuse.com in Chrome for Android.
         var packageName = "com.android.chrome";               // Chrome for Android package name
         var url         = "http://caniuse.com/#search=webgl"; // Caniuse.com
         var intentURL   = WebIntent.build(packageName, url);
+
+        WebIntent.redirect( intentURL );
+    }
+    if (1) {
+        var intentURL = WebIntent.build("com.android.chrome", location.href);
 
         WebIntent.redirect( intentURL );
     }

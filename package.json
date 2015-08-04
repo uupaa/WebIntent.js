@@ -1,6 +1,6 @@
 {
   "name":           "uupaa.webintent.js",
-  "version":        "0.0.0",
+  "version":        "0.0.1",
   "description":    "WebIntent implement",
   "url":            "https://github.com/uupaa/WebIntent.js",
   "keywords":       ["WebIntent", "Intent", "Browser", "uupaa", "WebModule", "Unstable"],
