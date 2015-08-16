@@ -14,14 +14,14 @@ onmessage = function(event) {
 
     importScripts("../lib/WebModule.js");
 
-    //publish to global. eg: window.WebModule.Class -> window.Class
-    //WebModule.publish = true;
+    // publish to global
+    WebModule.publish = true;
 
     
-    
-    
-    
-    
+    importScripts("wmtools.js");
+    importScripts("../lib/WebIntent.js");
+    importScripts("../release/WebIntent.w.min.js");
+    importScripts("testcase.js");
 
     self.postMessage(self.unitTest);
 };

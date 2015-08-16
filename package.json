@@ -1,59 +1,59 @@
 {
-  "name":           "uupaa.webintent.js",
-  "version":        "0.0.1",
-  "description":    "WebIntent implement",
-  "url":            "https://github.com/uupaa/WebIntent.js",
-  "keywords":       ["WebIntent", "Intent", "Browser", "uupaa", "WebModule", "Unstable"],
+  "name": "uupaa.webintent.js",
+  "version": "0.0.2",
+  "description": "WebIntent implement",
+  "url": "https://github.com/uupaa/WebIntent.js",
+  "keywords": ["WebIntent", "Intent", "Browser", "uupaa", "WebModule", "Unstable"],
   "repository": {
-    "type":         "git",
-    "url":          "https://github.com/uupaa/WebIntent.js.git"
+    "type": "git",
+    "url": "https://github.com/uupaa/WebIntent.js.git"
   },
   "scripts": {
-    "sync":         "node ../WebModule/run/sync.js; npm update; node ../WebModule/run/page.js",
-    "wiki":         "node ../WebModule/run/wiki.js",
-    "min":          "node ../WebModule/run/minify.js --verbose --strict --keep --pretty",
-    "build":        "node ../WebModule/run/minify.js --verbose --strict --keep --release",
-    "watch":        "node ../WebModule/run/watch.js --verbose --run lint",
-    "page":         "node ../WebModule/run/page.js --verbose",
-    "test":         "npm run min; npm run node; npm run browser",
-    "node":         "NODE_ENV=production NODE_PATH=lib node --harmony test/node.js",
-    "noded":        "NODE_ENV=production NODE_PATH=lib node --debug-brk --harmony test/node.js",
-    "browser":      "open http://localhost:8000/WebIntent.js/test/index.html",
-    "add-src":      "node ../WebModule/run/add-src.js",
-    "sim":          "node ../WebModule/run/sim.js http://localhost:8000/WebIntent.js/test/index.html",
-    "simx":         "node ../WebModule/run/sim.js stop",
-    "lint":         "eslint lib/*.js",
-    "score":        "node ../WebModule/run/score.js; open lint/plato/index.html",
-    "patch":        "node ../WebModule/run/patch.js",
-    "setup":        "node ../WebModule/run/setup.js",
-    "start":        "cd ../; Python -m SimpleHTTPServer 8000 &",
-    "stop":         "killall -- Python -m SimpleHTTPServer 8000; exit 0"
+    "sync": "node ../WebModule/run/sync.js; npm update; node ../WebModule/run/page.js",
+    "wiki": "node ../WebModule/run/wiki.js",
+    "min": "node ../WebModule/run/minify.js --verbose --strict --keep --pretty",
+    "build": "node ../WebModule/run/minify.js --verbose --strict --keep --release",
+    "watch": "node ../WebModule/run/watch.js --verbose --run lint",
+    "page": "node ../WebModule/run/page.js --verbose",
+    "test": "npm run min; npm run node; npm run browser",
+    "node": "NODE_ENV=production NODE_PATH=lib node --harmony test/node.js",
+    "noded": "NODE_ENV=production NODE_PATH=lib node --debug-brk --harmony test/node.js",
+    "browser": "open http://localhost:8000/WebIntent.js/test/index.html",
+    "add-src": "node ../WebModule/run/add-src.js",
+    "sim": "node ../WebModule/run/sim.js http://localhost:8000/WebIntent.js/test/index.html",
+    "simx": "node ../WebModule/run/sim.js stop",
+    "lint": "eslint lib/*.js",
+    "score": "node ../WebModule/run/score.js; open lint/plato/index.html",
+    "patch": "node ../WebModule/run/patch.js",
+    "setup": "node ../WebModule/run/setup.js",
+    "start": "cd ../; Python -m SimpleHTTPServer 8000 &",
+    "stop": "killall -- Python -m SimpleHTTPServer 8000; exit 0"
   },
   "webmodule": {
-    "develop":      false,
-    "label":        ["@dev"],
+    "develop": false,
+    "label": ["@dev"],
     "browser": {
-      "source":     ["lib/WebIntent.js"],
-      "output":     "release/WebIntent.b.min.js"
+      "source": ["lib/WebIntent.js"],
+      "output": "release/WebIntent.b.min.js"
     },
     "worker": {
-      "source":     ["lib/WebIntent.js"],
-      "output":     "release/WebIntent.w.min.js"
+      "source": ["lib/WebIntent.js"],
+      "output": "release/WebIntent.w.min.js"
     },
     "node": {
-      "source":     ["lib/WebIntent.js"],
-      "output":     "release/WebIntent.n.min.js"
+      "source": ["lib/WebIntent.js"],
+      "output": "release/WebIntent.n.min.js"
     },
     "nw": {
-      "source":     ["lib/WebIntent.js"],
-      "output":     "release/WebIntent.nw.min.js"
+      "source": ["lib/WebIntent.js"],
+      "output": "release/WebIntent.nw.min.js"
     }
   },
   "dependencies": {},
   "devDependencies": {},
-  "lib":            "./lib/",
-  "main":           "./index.js",
-  "author":         "uupaa",
-  "license":        "MIT",
-  "contributors":   []
+  "lib": "./lib/",
+  "main": "./index.js",
+  "author": "uupaa",
+  "license": "MIT",
+  "contributors": []
 }
